@@ -68,16 +68,25 @@ console.log(temperature);
 console.log(typeof temperature);
 
 //7//
-var getaddress = document.getElementById("url_1").innerText;
-var modifiedAddress = getaddress + " " + "https:// here"
 
-document.getElementById("url_1").innerText = modifiedAddress
+// 1
+var getAddressFromWebsite = document.getElementById("url_1").innerText;
+console.log(getAddressFromWebsite);
+
+var modifyAddress = "https://" + getAddressFromWebsite;
+console.log(modifyAddress);
 
 
+document.getElementById("url_2").innerText = modifyAddress;
 
-var getaddress = document.getElementById("url_3").innerText;
-var modifiedAddress =   "www.google.com"
 
-document.getElementById("url_3").innerText = modifiedAddress
+// 2
 
+var getAddress = document.getElementById("url_3").innerText;
+console.log(getAddress);
+
+var modifyAddress = (getAddress.replace("https://", ""));
+console.log(modifyAddress);
+
+document.getElementById("url_4").innerText = modifyAddress;
 
